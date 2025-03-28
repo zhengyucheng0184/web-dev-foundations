@@ -1,228 +1,111 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind CSS 練習</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁設計學習中心</title>
     <script src="https://cdn.tailwindcss.com"></script>
-              
-    <!-- 
-    步驟一：引入 Tailwind CSS
-    請將以下程式碼加入到 head 標籤中：
-    <script src="https://cdn.tailwindcss.com"></script> 
-
-    步驟二：
-    1. 前往 Tailwind CSS 官方文件：https://v3.tailwindcss.com/docs
-    2. 學習如何使用 Tailwind 的 utility classes
-    3. 透過添加適當的 class 來設計網頁樣式
-    -->
   </head>
   <body>
-    <!-- 導航列 -->
-    <nav class="px-6 py-4 border-b mb-12">
-      <div class="flex justify-between items-center">
-        <img src="https://placehold.jp/100x50.png" alt="Logo" />
-        <ul class="flex gap-x-4">
-          <li><a href="#">首頁</a></li>
-          <li><a href="#">關於我們</a></li>
-          <li><a href="#">服務項目</a></li>
-          <li><a href="#">聯絡資訊</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- 首頁橫幅 -->
-    <header>
-      <h1>探索 Tailwind CSS 的魅力</h1>
-      <p>透過實作學習現代化的 CSS 框架</p>
-      <div>
-        <button>開始學習</button>
-        <button>觀看教學</button>
-      </div>
-    </header>
-
-    <!-- 主要內容區 -->
-    <main>
-      <!-- 特色介紹 -->
-      <section>
-        <h2>為什麼選擇我們？</h2>
-        <div>
-          <div>
-            <img src="https://placehold.jp/150x150.png" alt="圖示 1" />
-            <h3>快速開發</h3>
-            <p>使用 Utility-First 的方法，加速開發流程</p>
-          </div>
-          <div>
-            <img src="https://placehold.jp/150x150.png" alt="圖示 2" />
-            <h3>響應式設計</h3>
-            <p>輕鬆打造適配各種螢幕尺寸的網站</p>
-          </div>
-          <div>
-            <img src="https://placehold.jp/150x150.png" alt="圖示 3" />
-            <h3>客製化設計</h3>
-            <p>依據需求打造獨特的使用者介面</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 產品展示 -->
-      <section>
-        <h2>熱門課程</h2>
-        <div>
-          <div>
-            <img src="https://placehold.jp/300x200.png" alt="課程 1" />
-            <h3>HTML 基礎教學</h3>
-            <p>學習網頁結構的基本元素</p>
-            <p>課程時長：2 小時</p>
-            <button>立即報名</button>
-          </div>
-          <div>
-            <img src="https://placehold.jp/300x200.png" alt="課程 2" />
-            <h3>CSS 樣式設計</h3>
-            <p>掌握網頁設計的核心技巧</p>
-            <p>課程時長：3 小時</p>
-            <button>立即報名</button>
-          </div>
-          <div>
-            <img src="https://placehold.jp/300x200.png" alt="課程 3" />
-            <h3>JavaScript 互動程式</h3>
-            <p>為網頁添加豐富的互動效果</p>
-            <p>課程時長：4 小時</p>
-            <button>立即報名</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- 用戶見證 -->
-      <section>
-        <h2>學員心得</h2>
-        <div>
-          <div>
-            <img src="https://placehold.jp/100x100.png" alt="用戶頭像 1" />
-            <p>「透過這個課程，我學會了如何有效率地開發網站。」</p>
-            <p>- 王小明</p>
-          </div>
-          <div>
-            <img src="https://placehold.jp/100x100.png" alt="用戶頭像 2" />
-            <p>「課程內容非常實用，讓我能夠快速上手。」</p>
-            <p>- 李小華</p>
-          </div>
-          <div>
-            <img src="https://placehold.jp/100x100.png" alt="用戶頭像 3" />
-            <p>「老師的教學方式清晰易懂，收穫良多。」</p>
-            <p>- 張小芳</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- 註冊表單 -->
-      <section>
-        <h2>立即註冊</h2>
-        <form>
-          <div>
-            <label for="name">姓名：</label>
-            <input type="text" id="name" required />
-          </div>
-          <div>
-            <label for="email">電子郵件：</label>
-            <input type="email" id="email" required />
-          </div>
-          <div>
-            <label for="phone">電話：</label>
-            <input type="tel" id="phone" />
-          </div>
-          <div>
-            <label for="course">選擇課程：</label>
-            <select id="course">
-              <option value="">請選擇課程</option>
-              <option value="html">HTML 基礎教學</option>
-              <option value="css">CSS 樣式設計</option>
-              <option value="js">JavaScript 互動程式</option>
-            </select>
-          </div>
-          <div>
-            <label for="message">留言：</label>
-            <textarea id="message" rows="4"></textarea>
-          </div>
-          <button type="submit">送出表單</button>
-        </form>
-      </section>
-    </main>
-
     <!-- 頁尾資訊 -->
-    <footer>
-      <div>
-        <div>
-          <h3>關於我們</h3>
-          <p>提供優質的網頁開發教學</p>
-          <p>地址：台北市某某區某某路123號</p>
-          <p>電話：(02) 1234-5678</p>
-          <p>Email：info@example.com</p>
+    <footer class="bg-gradient-to-br from-gray-900 to-gray-800 text-gray-300 py-16 mt-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <div class="space-y-4">
+            <img src="https://placehold.jp/100x50.png" alt="Logo" class="h-8 w-auto mb-6" />
+            <p class="text-sm leading-relaxed">提供優質的網頁開發教學，幫助您快速掌握現代化網頁技術，成為專業的開發人員。</p>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-bold mb-6">聯絡資訊</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center group">
+                <svg class="w-5 h-5 mr-3 text-blue-500 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span class="group-hover:text-white transition-colors">台北市某某區某某路123號</span>
+              </li>
+              <li class="flex items-center group">
+                <svg class="w-5 h-5 mr-3 text-blue-500 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span class="group-hover:text-white transition-colors">(02) 1234-5678</span>
+              </li>
+              <li class="flex items-center group">
+                <svg class="w-5 h-5 mr-3 text-blue-500 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span class="group-hover:text-white transition-colors">info@example.com</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-bold mb-6">快速連結</h3>
+            <ul class="space-y-3">
+              <li>
+                <a href="#" class="group flex items-center hover:text-white transition-colors duration-200">
+                  <svg class="w-4 h-4 mr-2 text-blue-500 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                  常見問題
+                </a>
+              </li>
+              <li>
+                <a href="#" class="group flex items-center hover:text-white transition-colors duration-200">
+                  <svg class="w-4 h-4 mr-2 text-blue-500 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                  課程介紹
+                </a>
+              </li>
+              <li>
+                <a href="#" class="group flex items-center hover:text-white transition-colors duration-200">
+                  <svg class="w-4 h-4 mr-2 text-blue-500 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                  購買須知
+                </a>
+              </li>
+              <li>
+                <a href="#" class="group flex items-center hover:text-white transition-colors duration-200">
+                  <svg class="w-4 h-4 mr-2 text-blue-500 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                  聯絡我們
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-white text-lg font-bold mb-6">追蹤我們</h3>
+            <div class="flex gap-4">
+              <a href="#" class="group bg-gray-700 p-3 rounded-lg hover:bg-blue-600 transition-all duration-300">
+                <svg class="w-5 h-5 text-gray-300 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.77,7.46H14.5v-1.9c0-.9.6-1.1,1-1.1h3V.5L14.17.5C10.24.5,9.1,3.3,9.1,5.47V7.46H5.5v3.4h3.6V22.5h5.4V10.86h3.47l.44-3.4"/>
+                </svg>
+              </a>
+              <a href="#" class="group bg-gray-700 p-3 rounded-lg hover:bg-pink-600 transition-all duration-300">
+                <svg class="w-5 h-5 text-gray-300 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12,2.982c2.937,0,3.285.011,4.445.064a6.072,6.072,0,0,1,2.042.379,3.4,3.4,0,0,1,1.267.823,3.4,3.4,0,0,1,.823,1.267,6.072,6.072,0,0,1,.379,2.042c.053,1.16.064,1.508.064,4.445s-.011,3.285-.064,4.445a6.072,6.072,0,0,1-.379,2.042,3.4,3.4,0,0,1-.823,1.267,3.4,3.4,0,0,1-1.267.823,6.072,6.072,0,0,1-2.042.379c-1.16.053-1.508.064-4.445.064s-3.285-.011-4.445-.064a6.072,6.072,0,0,1-2.042-.379,3.4,3.4,0,0,1-1.267-.823,3.4,3.4,0,0,1-.823-1.267,6.072,6.072,0,0,1-.379-2.042c-.053-1.16-.064-1.508-.064-4.445s.011-3.285.064-4.445a6.072,6.072,0,0,1,.379-2.042,3.4,3.4,0,0,1,.823-1.267,3.4,3.4,0,0,1,1.267-.823,6.072,6.072,0,0,1,2.042-.379c1.16-.053,1.508-.064,4.445-.064M12,1c-2.987,0-3.362.013-4.535.066a8.074,8.074,0,0,0-2.67.511,5.392,5.392,0,0,0-1.949,1.27,5.392,5.392,0,0,0-1.27,1.949,8.074,8.074,0,0,0-.511,2.67C1.013,8.638,1,9.013,1,12s.013,3.362.066,4.535a8.074,8.074,0,0,0,.511,2.67,5.392,5.392,0,0,0,1.27,1.949,5.392,5.392,0,0,0,1.949,1.27,8.074,8.074,0,0,0,2.67.511C8.638,22.987,9.013,23,12,23s3.362-.013,4.535-.066a8.074,8.074,0,0,0,2.67-.511,5.392,5.392,0,0,0,1.949-1.27,5.392,5.392,0,0,0,1.27-1.949,8.074,8.074,0,0,0,.511-2.67C22.987,15.362,23,14.987,23,12s-.013-3.362-.066-4.535a8.074,8.074,0,0,0-.511-2.67,5.392,5.392,0,0,0-1.27-1.949,5.392,5.392,0,0,0-1.949-1.27,8.074,8.074,0,0,0-2.67-.511C15.362,1.013,14.987,1,12,1Zm0,5.351A5.649,5.649,0,1,0,17.649,12,5.649,5.649,0,0,0,12,6.351Zm0,9.316A3.667,3.667,0,1,1,15.667,12,3.667,3.667,0,0,1,12,15.667Zm5.872-10.859a1.32,1.32,0,1,0,1.32,1.32A1.32,1.32,0,0,0,17.872,4.808Z"/>
+                </svg>
+              </a>
+              <a href="#" class="group bg-gray-700 p-3 rounded-lg hover:bg-sky-500 transition-all duration-300">
+                <svg class="w-5 h-5 text-gray-300 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M23,5.89a9.36,9.36,0,0,1-2.86.85,4.71,4.71,0,0,0,2-2.61,8.89,8.89,0,0,1-3.15,1.28,4.46,4.46,0,0,0-3.3-1.5A4.58,4.58,0,0,0,11.07,8.5a4.66,4.66,0,0,0,.11,1,12.72,12.72,0,0,1-9.3-4.85,4.82,4.82,0,0,0-.62,2.33,4.69,4.69,0,0,0,2,3.87A4.57,4.57,0,0,1,1,10.17v.06a4.62,4.62,0,0,0,3.63,4.52,4.57,4.57,0,0,1-1.2.16A4.43,4.43,0,0,1,2.57,14a4.53,4.53,0,0,0,4.23,3.2,9,9,0,0,1-5.66,2A9.31,9.31,0,0,1,0,19a12.63,12.63,0,0,0,7,2A12.82,12.82,0,0,0,19.75,8.3c0-.2,0-.39,0-.59A9.18,9.18,0,0,0,23,5.89Z"/>
+                </svg>
+              </a>
+              <a href="#" class="group bg-gray-700 p-3 rounded-lg hover:bg-blue-700 transition-all duration-300">
+                <svg class="w-5 h-5 text-gray-300 group-hover:text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447,20.452H16.893V14.883c0-1.328-.027-3.037-1.852-3.037-1.853,0-2.136,1.445-2.136,2.939v5.667H9.351V9h3.414v1.561h.046a3.745,3.745,0,0,1,3.37-1.85c3.6,0,4.267,2.37,4.267,5.455v6.286ZM5.337,7.433A2.062,2.062,0,1,1,7.4,5.368,2.064,2.064,0,0,1,5.337,7.433ZM7.119,20.452H3.555V9H7.119ZM22.225,0H1.771A1.75,1.75,0,0,0,0,1.729V22.271A1.749,1.749,0,0,0,1.771,24H22.222A1.756,1.756,0,0,0,24,22.271V1.729A1.756,1.756,0,0,0,22.222,0Z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-        <div>
-          <h3>快速連結</h3>
-          <ul>
-            <li><a href="#">常見問題</a></li>
-            <li><a href="#">課程介紹</a></li>
-            <li><a href="#">購買須知</a></li>
-            <li><a href="#">聯絡我們</a></li>
-          </ul>
+        <div class="border-t border-gray-700 pt-8 text-center">
+          <p class="text-sm">&copy; 2024 網頁設計學習中心. All rights reserved.</p>
         </div>
-        <div>
-          <h3>追蹤我們</h3>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">LinkedIn</a></li>
-          </ul>
-        </div>
-      </div>
-      <div>
-        <p>&copy; 2024 網頁設計學習中心. All rights reserved.</p>
       </div>
     </footer>
-
-    <!-- 
-    練習重點：
-    1. 導航列設計
-       - 製作固定置頂的導航列
-       - 在手機版時變為漢堡選單
-
-    2. 首頁橫幅
-       - 設計全寬的橫幅背景
-       - 製作引人注目的標題樣式
-       - 設計吸引人的按鈕效果
-
-    3. 特色介紹區
-       - 使用 Grid 或 Flexbox 排列內容
-       - 加入適當的間距
-       - 設計圖示的樣式
-
-    4. 產品展示區
-       - 製作響應式的卡片布局
-       - 設計圖片的顯示方式
-       - 加入互動效果（hover）
-
-    5. 用戶見證區
-       - 設計引述樣式
-       - 適當地排列用戶資訊
-       - 製作圓形的用戶頭像
-
-    6. 註冊表單
-       - 設計表單元素的樣式
-       - 加入適當的間距
-       - 製作具有互動效果的按鈕
-
-    7. 頁尾設計
-       - 製作多欄式的頁尾布局
-       - 設計連結的樣式
-       - 適當地排列聯絡資訊
-
-    8. 響應式設計
-       - 使用 Tailwind 的響應式類別
-       - 確保在不同裝置上都有良好的顯示效果
-       - 適當調整文字大小和間距
-    -->
   </body>
 </html>
